@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form{
+        border:solid ;
+        border-color:darkorchid;
+       /* width:40%;
+       /* height:100%;*/
+        box-sizing:border-box;
+      
+      }
+      
+      input[type="text"]{
+        /*border-color:darkred*/
+        background-color: rgb(123, 245, 252);
+        
+      }
+      h2{
+        color:darkorange
+      }
+      input[type="submit"]{
+        background-color: pink;
+        /*border-color: pink;*/
+      }
+      input[type="datetime-local"]{
+       background-color: rgb(226, 241, 138);*/
+       
+      }
+      
+
+      
+    </style>
+  
+    <!--<script type="text/javascript">
+        function showMessage(){
+          alert("Your Response Has Been Recorded.");
+        }-->
+       
+</head>
+<body>
+    
+        <form action=" " method="post" >
+            <center>
+          <br><br><h2><label for="name">Enter Full Name:</label></h2>
+            <input type="text" required>
+            <br><h2><label for="email">Enter your Email:</label></h2>
+            <input type="text" required>
+            <br><h2><label for="Dob">Enter Your Date of Birth:</label></h2>
+            <input type="datetime-local" id="dob" required>
+            <br><h2><label>  Enter Mobile Number:</label></h2>
+           <!--<input type="number" name="country_ code" title="Error Message" pattern="[1-9]{1}[0-9]{9}"><br>..--
+            <!-<input type="number" pattern="^[0-9]{1,10}$."  required><br>...-->
+            <input type="text" pattern="[0-9]{10}" maxlength="10" required><br>
+            
+           <!---- <br><input type="submit" id="mysubmit" value="submit" formTarget="_self"/>-->
+           <!---- <button onclick="alert('Form Has been Submitted Successfully')">Submit</button> -->
+            <!--document.getElementById("mysubmit").formTarget;-->
+           <br> <input type="Submit" value="Submit"  >
+            
+            </center>
+        </form>
+        <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Your Response Has been Recorded');
+        });
+    </script>
+    
+</body>
+</html>
